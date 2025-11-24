@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoAlunos - Serviço de Informação dos Alunos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #0087cd;
+            padding: 2rem 2rem 1.5rem;
+            color: white;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin: 0 auto 1rem;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
+
+        .site-title {
+            font-size: 1.75rem;
+            margin-bottom: 2.5rem;
+            font-weight: normal;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 0.75rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.6rem 0.75rem;
+            border: none;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .form-control::placeholder {
+            color: #666;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 0.6rem;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+            display: block;
+        }
+
+        .error-message {
+            color: #000000;
+            margin: 0.75rem 0;
+            font-size: 0.85rem;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .recover-link {
+            color: white;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+            display: block;
+            text-align: right;
+        }
+
+        .recover-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="login-container">
+        <img src="assets/img/logouni.png" alt="Universidade da Madeira" class="logo">
+        <h1 class="site-title">infoalunos.uma.pt</h1>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="N.º de Aluno" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+
+            
+            <div class="error-message">Não existe uma sessão activa. Deve ir à página de entrada do Serviço de Informação dos Alunos para introduzir a sua chave de acesso.</div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+
+        <a href="#" class="recover-link">recuperar password</a>
+    </main>
+</body>
+</html>
+</body>
+</html>
